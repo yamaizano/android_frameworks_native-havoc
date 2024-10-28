@@ -57,6 +57,10 @@ libbinder_device_interface_sources = [
 cc_library {
     name: "libbinder",
 
+    header_abi_checker: {
+         enabled: false,
+     },
+
     // for vndbinder
     vendor_available: true,
     vndk: {
